@@ -39,8 +39,10 @@
 4. Create method for topological sorting.
 5. Start DFS with root element as first parameter.
 6. Base case 1 - current node has already been visited (cycle), throw exception.
-7. Base case 2 - node visited? 
+7. Base case 2 - node visited? return
 8. When we 'visit' a node in DFS method add the node to visited nodes set.
 9. Call DFS recursively for all children.
 10. Remove item from visited nodes.
 11. Add current node as first in linked list. (as it is backtracking phase, we go backwards)
+
+## Minimum Spanning Tree (MST) Kruskal
