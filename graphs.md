@@ -46,3 +46,18 @@
 11. Add current node as first in linked list. (as it is backtracking phase, we go backwards)
 
 ## Minimum Spanning Tree (MST) Kruskal
+### Finding Parent Node
+1. Initialize an array from 0 to N where N is number of nodes.
+2. Searching for the parent of u we start with the index u.
+3. Check if value in the array on index u is equal to u.
+4. If not, go to index = arr[u]
+### Build a forest from scratch
+1. Sort list of edges by weight
+2. Initialize empty list for the forest.
+3. go through sorted edges
+4. for edge start and edge end find the parents (cycle detection)
+5. If parents are different nodes add the edge to spanning forest.
+6. mark one node as parent of the other*
+### Marking one node as parent of the other
+in the 'parents' array we mark the parent of start node as parent of end (parent[startNodeParent] = endNodeParent;)
+When start node has no parent yet start node will be parent of end node.
